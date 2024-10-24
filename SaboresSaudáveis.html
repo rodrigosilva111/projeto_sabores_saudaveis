@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores Saudáveis - Receita</title>
+    <link rel="stylesheet" href="projetods.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <img src="img/foto01.png" alt="Sabores Saudáveis" width="300px">
+        </div>
+
+        <!-- Imagem do banner -->
+        <img src="img/foto02.jpg" alt="Banner de receitas sem glúten" class="banner">
+
+        <!-- Seção sem glúten -->
+        <div class="sub-header">
+            <p><strong>Sem Glúten • Sem Glúten • Sem Glúten</strong></p>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="main-content">
+            <h2><strong>Procurando pratos frescos e deliciosos? Prepare um em menos de 30 minutos.</strong></h2>
+
+            <!-- Receitas em destaque -->
+            <div class="receitas">
+                <div class="card">
+                    <img src="img/foto03.jpg" alt="Sopa de abóbora tailandesa">
+                    <div class="card-body">
+                    <p><strong>Sopa de abóbora tailandesa</strong></p>
+                    <p>Com um toque de leite de coco.</p>
+                    <a href="https://www.sumerbol.com.br/artigo/sopa-tailandesa-de-abobora" class="btn btn-success" target="_blank"><strong>Ver Receita</strong></a>
+                    </div>
+                </div>                  
+                <div class="card">
+                    <img src="img/foto04.jpg" alt="Pão de banana com nozes">
+                    <p><strong>Pão de banana com nozes</strong></p>
+                    <p>Com um sabor autêntico e caseiro.</p>
+                    <a href="https://www.tudogostoso.com.br/receita/148131-pao-de-banana-com-nozes.html" class="btn-primary" target="_blank"><strong>Ver Receita</strong></a>
+                </div>
+                <div class="card">
+                    <img src="img/foto05.jpg" alt="Batatas crocantes">
+                    <p><strong>Batatas crocantes</strong></p>
+                    <p>Com um incrível crunch exterior.</p>
+                    <a href="https://receitas.globo.com/regionais/rpc/estudio-c/leve-e-saudavel-aprenda-a-fazer-batata-assada-crocante-g.ghtml" class="btn btn-primary" target="_blank"><strong>Ver Receita</strong></a>
+                </div>
+            </div>
+
+            <h2><a href="receitas01.html"><strong>Receitas feitas por Chefs</strong></a></h2>
+
+            <!-- Apresentação do Chef -->
+            <div class="intro">
+                <div class="intro-content">
+                <h2><strong>Oi, eu sou o José</strong></h2>
+                <h3>Um entusiasta da culinária saudável, levei a ideia de criar um portal inovador de receitas saudáveis, oferecendo dicas e inspirações para uma vida equilibrada e nutritiva.</h3>
+            </div>
+                <img src="img/foto06.jpg" alt="José">
+            </div>
+
+            <!-- Receita de Macarrão Verde -->
+            <div class="recipe">
+                <div class="recipe-content">
+                    <h2><strong>Macarrão Verde feito por José</strong></h2>
+                    <h3>Nutritivo e leve, com espinafre, abobrinha e molho de iogurte, cheio de sabor e frescor.</h3>
+                </div>
+                <img src="img/foto07.jpg" alt="Macarrão Verde" width="50%"> 
+            </div>
+
+            <!-- Formulário -->
+            <div class="form-container">
+                <h2><strong>Cadastre Sua Receita Saudável</strong></h2>
+
+                <form id="recipeForm" method="post">
+                <label for="chefPhoto">Foto do Chef:</label>
+                <input type="file" id="chefPhoto" name="chefPhoto" accept="image/*" required>
+
+                <label for="chefName">Nome do Chef:</label>
+                <input type="text" id="chefName" name="chefName" required>
+
+                <label for="chefAge">Idade:</label>
+                <input type="number" id="chefAge" name="chefAge" required>
+
+                <label for="dob">Data de Nascimento:</label> 
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="recipe">Receita:</label>
+                <textarea id="recipe" name="recipe" rows="5" required></textarea>
+
+                <button type="submit">Enviar Receita</button>
+                </form>
+
+                <script>
+                  document.getElementById('recipeForm').addEventListener('submit', function(event) {
+                  event.preventDefault();
+                  alert('Receita enviada com sucesso!');
+                  // Aqui você pode adicionar o código para enviar os dados do formulário para o seu servidor
+                  });
+                </script>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="footer">
+            <p>Copyright © 2024 Sabores Saudáveis - Todos os direitos reservados.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
