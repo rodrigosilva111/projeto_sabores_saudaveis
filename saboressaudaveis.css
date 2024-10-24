@@ -1,0 +1,132 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+}
+.header {
+    background-color: #7c3b12;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+.header h1 {
+    margin: 0;
+}
+.banner {
+    width: 100%;
+    display: block;
+}
+.sub-header {
+    background-color: #2e623d;
+    text-align: center;
+    color: #f17909;
+    padding: 15px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.main-content {
+    padding: 20px;
+    background-color: #DBD3B7;
+    text-align: center;
+}
+.main-content h2 {
+    color: #000000;
+}
+.receitas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.card {
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+.intro {
+    background-color: #6f753aa2;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro-content {
+    flex: 1;
+}
+.intro img {
+    width: 50%;
+    height: auto;
+    margin-left: 50px;
+}
+.recipe {
+    background-color: #6f753aa2;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    flex-direction: row-reverse; 
+}
+.recipe-image {
+    float: none; 
+    margin-left: 20px; 
+    width: 300px;
+}
+.recipe-content {
+    flex: 1; 
+}
+.recipe h2, .recipe h3 {
+    margin: 10px 0;
+    color: black;
+}
+.footer {
+    background-color: #2e623d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+.footer p {
+    margin: 0;
+}
+
+form {
+    background: #DBD3B7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+
